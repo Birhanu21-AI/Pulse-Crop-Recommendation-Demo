@@ -201,18 +201,18 @@ if submit:
         )
 
     elif r.status_code == 422:
-    st.warning(
-        "Some inputs are invalid. Please check the values and try again."
-    )
+        st.warning(
+            "Some inputs are invalid. Please check the values and try again."
+        )
 
-elif 400 <= r.status_code < 500:
-    st.error(
-        "The request could not be processed. "
-        "Please check your inputs and try again."
-    )
+    elif 400 <= r.status_code < 500:
+        st.error(
+            "The request could not be processed. "
+            "Please check your inputs and try again."
+        )
 
-else:
-    st.error(
-        "The service is temporarily unavailable. "
-        "Please try again later."
-    )
+    else:
+        st.error(
+            "The service is temporarily unavailable. "
+            "Please try again later."
+        )
