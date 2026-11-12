@@ -145,7 +145,7 @@ if submit:
         "rainfall": rainfall
     }
 
-    # Adding step 4 error handling in part 2
+    # Step 4: Error handling
     try:
         with st.spinner("Generating your crop recommendation. Please wait..."):
             r = requests.post(
@@ -153,20 +153,20 @@ if submit:
                 json=payload,
                 timeout=60
             )
-except requests.exceptions.Timeout:
-    st.error(
-        "The service took too long to answer. "
-        "Please wait a moment and try again."
-    )
-    st.stop()
 
-except requests.exceptions.RequestException:
-    st.error(
-        "Could not reach the service. "
-        "Check your connection and try again."
-    )
-    st.stop()
+    except requests.exceptions.Timeout:
+        st.error(
+            "The service took too long to answer. "
+            "Please wait a moment and try again."
+        )
+        st.stop()
 
+    except requests.exceptions.RequestException:
+        st.error(
+            "Could not reach the service. "
+            "Check your connection and try again."
+        )
+        st.stop()
 # Part 3: Displaying the result
     if r.status_code == 200:
         try:
