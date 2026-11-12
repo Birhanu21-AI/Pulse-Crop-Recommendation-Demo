@@ -143,16 +143,16 @@ if submit:
         "humidity": humidity,
         "ph": ph,
         "rainfall": rainfall
-   }
-# Adding step 4 error handling in part 2
-try:
-    with st.spinner("Generating your crop recommendation. Please wait..."):
-        r = requests.post(
-            f"{API_URL}/predict",
-            json=payload,
-            timeout=60
-        )
+    }
 
+    # Adding step 4 error handling in part 2
+    try:
+        with st.spinner("Generating your crop recommendation. Please wait..."):
+            r = requests.post(
+                f"{API_URL}/predict",
+                json=payload,
+                timeout=60
+            )
 except requests.exceptions.Timeout:
     st.error(
         "The service took too long to answer. "
