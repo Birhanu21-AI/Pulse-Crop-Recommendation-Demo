@@ -10,13 +10,14 @@
 5. Samuel Medhin –   Member
 6. Woldie Takele –   Member
 
-                                          ### An AI-Powered Web Application for Pulse Crop Recommendation Based on Soil and Climate Conditions
+###**An AI-Powered Web Application for Pulse Crop Recommendation Based on Soil and Climate Conditions**
 
 Pulse Crop Recommendation Demo is a Streamlit-based web application that allows users to obtain machine-learning-based pulse crop recommendations using soil nutrient measurements and environmental conditions. The application provides a simple, interactive interface through which users can enter agricultural parameters and receive crop predictions from a trained Random Forest classification model through a deployed FastAPI backend.
 
 **Live Demo:** https://pulse-crop-recommendation-demo.streamlit.app/
 ---
-                                              ## 1. Project Overview
+
+## 1. Project Overview
 
 The Pulse Crop Recommendation Demo is the user-facing application of the Pulse Crop Recommendation System. It connects a Streamlit frontend to a FastAPI backend, which processes user inputs using a trained Random Forest machine learning model.
 The application accepts seven numerical input parameters:
@@ -36,7 +37,7 @@ The machine learning model supports four pulse crop categories:
 - Lentil
 - Mungbean
 ---
-                                                      ## 2. Key Features
+## 2. Key Features
 The application provides the following features:
 
 - **Interactive User Interface:** Simple and accessible interface developed using Streamlit.
@@ -59,7 +60,7 @@ The application provides the following features:
 8. The application displays the recommended crop, confidence score, and model version.
 ---
 
-                                               ## 3. System Architecture
+## 3. System Architecture
 The project follows a frontend-backend architecture.
 | Component | Technology | Responsibility |
 |---|---|---|
@@ -105,7 +106,7 @@ The project follows a frontend-backend architecture.
 ```
 The Streamlit application handles the user interface, while the FastAPI backend handles model inference.
 ---
-                                                      ## 4. Dataset and Machine Learning Model
+## 4. Dataset and Machine Learning Model
 The application uses a trained Random Forest classification model developed using a filtered agricultural dataset.
 
 ### Dataset Summary
@@ -141,7 +142,7 @@ The final model's recorded evaluation results were:
 | Five-fold Cross-validation Macro F1 | 100% |
 These results were obtained using the available 400-record filtered dataset. They should not be interpreted as evidence of equivalent performance on independent agricultural data or real-world farming conditions.
 ---
-                                         ## 5. Repository Structure
+## 5. Repository Structure
 The Streamlit demo repository has the following structure:
 ```text
 Pulse-Crop-Recommendation-Demo/
@@ -171,7 +172,7 @@ To run the application locally, you need:
 - Access to the deployed FastAPI backend or a locally running instance.
 - The Python dependencies listed in `requirements.txt`.
 ---
-                                               ## 7. Installation and Execution
+## 7. Installation and Execution
 
 ### Option A: Run Locally 
 **Step 1: Clone the repository**
@@ -245,7 +246,7 @@ https://pulse-crop-recommendation-demo.streamlit.app/
 
 ---
 
-                                                        ## 8. Backend API Connection
+## 8. Backend API Connection
 The Streamlit application communicates with the FastAPI backend through HTTP requests.
 The backend exposes the following endpoints:
 | Method | Endpoint | Purpose |
@@ -269,7 +270,7 @@ https://pulse-crop-recommendation-app.onrender.com/predict
 The application uses the `API_URL` configuration to identify the backend service. This allows the frontend and backend to be maintained and deployed independently.
 ---
 
-                                                   ## 9. Limitations and Responsible Use
+## 9. Limitations and Responsible Use
 The application is an educational and preliminary agricultural decision-support prototype.
 Users should consider the following limitations:
 - The model was trained using a filtered dataset containing only 400 records.
@@ -283,7 +284,7 @@ Users should consider the following limitations:
 **Disclaimer:** This application is intended for educational and preliminary decision-support purposes. Its predictions should not be used as the sole basis for agricultural decisions. Users should consult agricultural extension professionals, qualified agronomists, and soil-testing services before making crop-selection decisions.
 ---
 
-                                                ## 10. Future Improvements
+## 10. Future Improvements
 Potential improvements include:
 - Integrating larger and more representative agricultural datasets from Ethiopian farming regions.
 - Improving input validation and user guidance.
@@ -294,7 +295,7 @@ Potential improvements include:
 - Improving application accessibility and user experience.
 ---
 
-                                                 ## 12. Related Project Materials
+## 12. Related Project Materials
 The wider project includes the following materials:
 - `Pulse_Crop_Recommendation.ipynb` – Model development, data preparation, and evaluation notebook.
 - `Model Card.pdf` – Model purpose, performance, limitations, and technical details.
