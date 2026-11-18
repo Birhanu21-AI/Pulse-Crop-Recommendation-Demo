@@ -1,4 +1,5 @@
-**    ## Pulse Crop Recommendation Demo**
+ ## Pulse Crop Recommendation Demo
+ 
   #Project Team members (Participants)
 This project was developed collaboratively by Group 4.
 1. Tsion Yohanes – Team Leader
@@ -10,8 +11,8 @@ This project was developed collaboratively by Group 4.
 
                                           ### An AI-Powered Web Application for Pulse Crop Recommendation Based on Soil and Climate Conditions
 
-**Pulse Crop Recommendation Demo** is a Streamlit-based web application that allows users to obtain machine-learning-based pulse crop recommendations using soil nutrient measurements and environmental conditions.
-The application provides a simple, interactive interface through which users can enter agricultural parameters and receive crop predictions from a trained Random Forest classification model through a deployed FastAPI backend.
+**Pulse Crop Recommendation Demo** is a Streamlit-based web application that allows users to obtain machine-learning-based pulse crop recommendations using soil nutrient measurements and environmental conditions. The application provides a simple, interactive interface through which users can enter agricultural parameters and receive crop predictions from a trained Random Forest classification model through a deployed FastAPI backend.
+.
 **Live Demo:** https://pulse-crop-recommendation-demo.streamlit.app/
 ---
                                               ## 1. Project Overview
