@@ -1,6 +1,6 @@
-                 ## Pulse Crop Recommendation Demo
+                 ##Pulse Crop Recommendation Demo
  
-            Project Team members (Participants)
+            #Project Team members (Participants)
   
   This project was developed collaboratively by Group 4.
 1. Tsion Yohanes –    Team Leader
